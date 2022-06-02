@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int blank;
+    int blank = 0;
     string s;
     getline(cin, s);
     if(s.size() == 0 || s.size() == 1 && s[0] == ' '){
