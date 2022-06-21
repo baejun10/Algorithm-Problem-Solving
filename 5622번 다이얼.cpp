@@ -33,8 +33,8 @@ int main()
     string in;
     cin >> in;
     getnum(in, num);
-    for(int i  = 0 ; num[i] != 0; i++){
-        cout << num[i];
-    }
-    // cout << get_time(num);
+    // for(int i  = 0 ; num[i] != 0; i++){
+    //     cout << num[i];
+    // }
+    cout << get_time(num);
 }
