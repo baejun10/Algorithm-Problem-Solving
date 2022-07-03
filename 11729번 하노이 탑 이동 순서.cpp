@@ -16,8 +16,8 @@ void hanoi_mov(int n, int start, int end){
 int main()
 {   
     int n;
-    cin >> n;
-    cout << pow(2,n)-1<< endl; // 이동 횟수
+    scanf("%d", &n);
+    printf("%.f\n",pow(2,n)-1 );
 
     hanoi_mov(n,1, 3);
 
