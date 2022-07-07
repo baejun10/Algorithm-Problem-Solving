@@ -1,24 +1,6 @@
-#include <iostream>
-#include <math.h>
-using namespace std;
-
-void hanoi_mov(int n, int start, int end){
-    if(n == 1){
-        printf("%d %d\n",start, end);
-        return;
-    }
-    int mid = 6 - start - end; // start, end빼고 남은거 한개
-    hanoi_mov(n-1, start, mid);
-    printf("%d %d\n",start, end);
-    hanoi_mov(n-1, mid, end);
-}
-
-int main()
-{   
-    int n;
-    cin >> n;
-    cout << pow(2,n)-1<< endl; // 이동 횟수
-
-    hanoi_mov(n,1, 3);
-
-}
+for(int j = 0 ; j < n; j++){
+        //     if(cnt[j] == 0){ //등장하지 않을경우 최우선으로 뽑기
+        //         pulloff = j;
+        //         break;
+        //     } 
+        // }
