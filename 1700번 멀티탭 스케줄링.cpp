@@ -14,12 +14,7 @@ int is_exist(int plug[], int in, int n)
 int main()
 {
     int ans = 0;
-    int n, k, plug[100] = {
-                  0,
-              },
-              list[100] = {
-                  0,
-              };
+    int n, k, plug[100] = {0,},list[100] = {0,};
     cin >> n >> k;
     for (int i = 0; i < k; i++)
     {
