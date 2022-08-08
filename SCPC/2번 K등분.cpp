@@ -9,7 +9,7 @@ int plist[500000] = {};
 
 int fpsum(int n, int start, int idx, int divc, int div){
     // n: 목표값, start 시작 인덱스, idx 수열 원소 개수
-    map <pair<int, int>, int> mem;
+    map <int, int> mem;
     int cnt = 0;
     int sum = 0;
     int end = start;
@@ -22,12 +22,12 @@ int fpsum(int n, int start, int idx, int divc, int div){
         sum += plist[end];
         end++;
         if(sum == n){
-            if(mem.count(make_pair(end, div+1))){
-                cnt+= mem.find(make_pair(end, div+1))->second;
+            if(mem.count(end)){
+                cnt+= mem.find(end)->second;
             }
             else{
                 int tcnt = fpsum(n, end, idx, divc, div+1);
-                mem.insert(make_pair(make_pair(end, div+1), tcnt));
+                mem.insert({end, tcnt});
                 cnt += tcnt;
             }
         } 

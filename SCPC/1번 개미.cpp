@@ -24,7 +24,7 @@ void sol(int t){
         v.push_back(k);
     }
     for(int i = 0 ;i < n ;i++){
-        pv.push(make_pair(v[i], p[i])); // ìˆ«ìž, ìœ„ì¹˜ ìˆœìœ¼ë¡œ ì •ë ¬
+        pv.push(make_pair(v[i], p[i])); // ¼ýÀÚ, À§Ä¡ ¼øÀ¸·Î Á¤·Ä
     }
 
 
