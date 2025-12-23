@@ -1,0 +1,6 @@
+*
+!*/
+!*.* 
+# 확장자 없는 파일 무시
+*.exe
+tempCodeRunnerFile.cpp
